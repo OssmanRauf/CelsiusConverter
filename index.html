@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Celsius converter</title>
+</head>
+
+<body>
+    <div>
+        <h1>Celsius Converter</h1>
+    </div>
+    <div id="input_conteiner">
+        <input type="number" class="celsius_input" placeholder="Celsius">
+        <button class="convert_btn">Convert</button>
+    </div>
+    <div id="loading">
+        <img src="https://i.gifer.com/ZZ5H.gif" alt="" srcset="">
+    </div>
+    <div class="result_conteiner" id="results">
+        <div class="result">
+            <h3 class="value">Celsius: </h3>
+            <h3 id="celsius"><span></span><sup>&#176</sup>C</h3>
+        </div>
+
+        <div class="result kelvin_class ">
+            <h3 class="value">Kelvin: </h3>
+            <h3 id="kelvin"><span></span><sup>&#176</sup>K</h3>
+        </div>
+
+        <div class="result faranheit-class">
+            <h3 class="value">Faranheit: </h3>
+            <h3 id="faranheit"> <span></span><sup>&#176</sup>F</h3>
+        </div>
+
+    </div>
+    <script src="./app.js "></script>
+</body>
+
+</html>

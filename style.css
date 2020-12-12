@@ -1,0 +1,139 @@
+*,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(63, 80, 80);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#input_conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 25px auto;
+    margin-top: 20px;
+}
+
+.error {
+    font-size: 1rem;
+    background-color: rgba(235, 64, 34, 0.7);
+    font-weight: 500;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 15px;
+    height: 30px;
+}
+
+.celsius_input {
+    width: 50%;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.convert_btn {
+    width: 50%;
+    height: 30px;
+    background-color: rgba(126, 126, 126, 0.8);
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+}
+
+#loading {
+    display: none;
+    justify-content: center;
+}
+
+#loading img {
+    width: 100px;
+}
+
+.result_conteiner {
+    display: none;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    align-items: baseline;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#result_conteiner_show {
+    display: flex;
+}
+
+.result {
+    display: flex;
+    border: 2px solid black;
+    margin: 0;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    justify-content: space-between;
+    border-collapse: collapse;
+    width: 100%;
+    height: 40px;
+    border-bottom: 0;
+}
+
+.faranheit-class {
+    border-bottom: 2px solid black;
+}
+
+.value {
+    margin-left: 5px;
+    align-items: center;
+}
+
+#faranheit,
+#kelvin,
+#celsius {
+    margin-right: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: none;
+}
+
+@media (min-width: 680px) {
+    .convert_btn,
+    .celsius_input {
+        max-width: 400px;
+    }
+    .result {
+        font-size: 1.2rem;
+    }
+    .value {
+        margin-left: 10px;
+    }
+    #faranheit,
+    #kelvin,
+    #celsius {
+        margin-right: 25px;
+    }
+}
